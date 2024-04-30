@@ -10,7 +10,7 @@ services:
   terminationGracePeriodSeconds: 30
   port: 5555
   domains:
-  - name: demo-flower.quivr.app
+  - name: 
   sleep: false
 - name: quivr-backend
   run: uvicorn main:app --reload --host 0.0.0.0 --port 5050 --workers 6 --log-level
@@ -22,7 +22,7 @@ services:
   terminationGracePeriodSeconds: 30
   port: 5050
   domains:
-  - name: demo-api.quivr.app
+  - name: 
   healthCheck:
     enabled: true
     httpPath: /healthz
